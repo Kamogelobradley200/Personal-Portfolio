@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Merriweather', sans-serif;
   padding: 0;
@@ -16,6 +20,11 @@ body {
     justify-content: space-between;
     padding: 20px 40px;
     background-color: #0d1b2a;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header a{
@@ -38,11 +47,19 @@ body {
 
 .navbar a{
    font-size: 22px;
-   margin-left: 30px;
+   margin-left: 20px;
 }
 .navbar a:hover{
     color: rgb(33, 165, 183);
 }
+
+.home{
+    padding-top: 120px;
+}
+section{
+    scroll-margin-top: 90px;
+}
+
 
 .home-content{
     display: flex;
@@ -60,7 +77,6 @@ body {
     padding: 10px 40px;
     display: flex;
     justify-content: center;
-    /* border-radius: 10cm; */
     font-size: 32px;
     font-weight: 550;
 }
